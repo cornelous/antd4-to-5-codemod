@@ -1,5 +1,5 @@
 {
-  "name": "@ant-design/codemod-v5",
+  "name": "@cornelous/antd4-to-5-codemod",
   "version": "1.1.5",
   "description": "Codemod for ant design v5 upgrade",
   "bin": {
@@ -10,13 +10,13 @@
     "codemod",
     "antd"
   ],
-  "homepage": "https://github.com/ant-design/codemod-v5",
+  "homepage": "https://github.com/cornelous/antd4-to-5-codemod",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ant-design/codemod-v5.git"
+    "url": "git@github.com:cornelous/antd4-to-5-codemod.git"
   },
   "bugs": {
-    "url": "http://github.com/ant-design/codemod-v5/issues"
+    "url": "https://github.com/cornelous/antd4-to-5-codemod/issues"
   },
   "license": "MIT",
   "engines": {
