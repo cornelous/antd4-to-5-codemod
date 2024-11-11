@@ -12,10 +12,10 @@ Before run codemod scripts, you'd better make sure to commit your local git chan
 
 ```shell
 # Run directly through npx
-npx -p @ant-design/codemod-v5 antd5-codemod src
+npx -p @cornelous/antd4-to-5-codemod antd5-codemod src
 
 # Or run directly through pnpm
-pnpm --package=@ant-design/codemod-v5 dlx antd5-codemod src
+pnpm --package=@cornelous/antd4-to-5-codemod dlx antd5-codemod src
 ```
 
 ## Codemod scripts introduction
