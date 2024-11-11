@@ -195,7 +195,7 @@ module.exports = (file, api, options) => {
               }
             } else {
               // <Modal visible={1} /> -> <Modal open={1} />
-              nodePath.node.name = replacer;
+              nodePath.node.name.name = replacer;
               hasChanged = true;
             }
           }
