@@ -37,7 +37,7 @@
     "find-up": "^4.1.0",
     "glob": "^8.0.3",
     "is-git-clean": "^1.1.0",
-    "jscodeshift": "^0.14.0",
+    "jscodeshift": "^17.1.1",
     "lodash": "^4.17.15",
     "ora": "^6.1.2",
     "p-all": "^4.0.0",
