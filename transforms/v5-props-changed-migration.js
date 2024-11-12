@@ -232,7 +232,7 @@ module.exports = (file, api, options) => {
                   nodePath.parent.parent.node,
                   j.nullLiteral(),
                 )
-              : nodePath.parent.parent.node;
+              : null;
 
             // <><Tag visible={vi} /></>
             // <div><Tag visible={vi} /></div>
