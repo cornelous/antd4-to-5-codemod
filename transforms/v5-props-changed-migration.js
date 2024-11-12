@@ -195,7 +195,13 @@ module.exports = (file, api, options) => {
               }
             } else {
               // <Modal visible={1} /> -> <Modal open={1} />
-              nodePath.node.name.name = replacer;
+
+              if (nodePath.node.name.type === 'JSXIdentifier') {
+                nodePath.node.name.name = replacer;
+              } else if (nodePath.node.name.type === 'JSXMemberExpression') {
+                nodePath.node.name.property.name = replacer;
+              }
+
               hasChanged = true;
             }
           }
