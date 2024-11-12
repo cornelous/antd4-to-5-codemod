@@ -195,13 +195,11 @@ module.exports = (file, api, options) => {
               }
             } else {
               // <Modal visible={1} /> -> <Modal open={1} />
-
               if (nodePath.node.name.type === 'JSXIdentifier') {
                 nodePath.node.name.name = replacer;
               } else if (nodePath.node.name.type === 'JSXMemberExpression') {
                 nodePath.node.name.property.name = replacer;
               }
-
               hasChanged = true;
             }
           }
@@ -234,7 +232,7 @@ module.exports = (file, api, options) => {
                   nodePath.parent.parent.node,
                   j.nullLiteral(),
                 )
-              : null;
+              : nodePath.parent.parent.node;
 
             // <><Tag visible={vi} /></>
             // <div><Tag visible={vi} /></div>
